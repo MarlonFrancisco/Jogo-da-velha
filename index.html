@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+
+		<title>Jogo da velha</title>
+		<link href="estilo.css" type="text/css" rel="stylesheet">
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		<script src="index.js"></script>
+	</head>
+
+	<body>
+		<div class="container">
+			<h5 class="title">Jogo da velha</h5>
+		</div>
+
+		<!-- Menu do jogo -->
+		<div class="container-fluid jogadores">
+			<div class="row">
+
+				<!-- Jogador 1 -->
+				<div class="col-md-4">
+					<img src="imagens/jogador_2.png" class="img_center">
+					<input type="text" class="form-control" id="j1" placeholder="Jogador 1">
+				</div>
+
+				<!-- Start game -->
+				<div class="col-md-4">
+					<a href="#" onclick="start();"><img src="imagens/iniciar.png" class="img_center"></a>
+				</div>
+
+				<!-- jogador 2 -->
+				<div class="col-md-4">
+					<img src="imagens/jogador_1.png" class="img_center">
+					<input type="text" class="form-control" id="j2" placeholder="Jogador 2">
+				</div>
+			</div>
+		</div>
+		<br>
+		<!-- Jogo -->
+		<div class="container-fluid game">
+			<div class="row">
+				<div class="col-md-3 name1">
+					<h5 class="title" id="n_j1"></h5>
+					<h5 class="title" id="resultado_j1"></h5>
+				</div>
+
+				<div class="col-md-6">
+					<div class="row">
+
+						<!-- Parte 1 do tabeleiro -->
+						<div class="col-md-4 border" id="t10">
+						</div>
+						<div class="col-md-4 border" id="t11">
+						</div>
+						<div class="col-md-4 border" id="t12">
+						</div>
+
+						<!-- Parte 2 do tabeleiro -->
+						<div class="col-md-4 border" id="t20">
+						</div>
+						<div class="col-md-4 border" id="t21">
+						</div>
+						<div class="col-md-4 border" id="t22">
+						</div>
+
+						<!-- Parte 3 do tabeleiro -->
+						<div class="col-md-4 border" id="t30">
+						</div>
+						<div class="col-md-4 border" id="t31">
+						</div>
+						<div class="col-md-4 border" id="t32">
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-3 name2">
+					<h5 class="title" id="n_j2"></h5>
+					<h5 class="title" id="resultado_j2"></h5>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
